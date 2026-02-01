@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com flexbox</title>
+</head>
+<header>
+    <h1>CARTAS MAIS FORTES DO MAGIC</h1>
+    <ol>
+        <li>The One Ring</li>
+        <li>Ancestral Recall</li>
+        <li>Time Walk</li>
+        <li>Library of Alexandria</li>
+    </ol>
+</header>
+<style>
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    li {
+        font-size: 30px;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+  .galeria {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* permite quebrar linha */
+    gap: 20px;       /* espaçamento entre imagens */
+  }
+
+  .galeria img {
+    width: 300px;
+    height: auto;
+    flex: 1 1 200px; /* flex-grow, flex-shrink, flex-basis */
+
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .galeria {
+      flex-direction: column; /* empilha as imagens em telas menores */
+      align-items: center;
+    }
+  }
+</style>
+
+<body>
+  <div class="galeria">
+    <img src="https://assets.gamearena.gg/wp-content/uploads/2024/09/26160217/rarest-magic-the-gathering-card-one-ring-found-worth-million-dollars.webp" alt="The One Ring">
+    <img src="https://assets.gamearena.gg/wp-content/uploads/2024/09/26160358/magic-ancestral-recall.png" alt="Ancestral Recall">
+    <img src="https://assets.gamearena.gg/wp-content/uploads/2024/09/26161957/magic_al_084_en.webp" alt="Time Walk">
+    <img src="https://assets.gamearena.gg/wp-content/uploads/2024/09/26162254/s-l1200.jpg" alt="Library of Alexandria">
+  </div>
+</body>
+</html>

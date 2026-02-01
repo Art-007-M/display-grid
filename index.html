@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Linha do Tempo J.K. Rowling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Linha central */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #6a1b9a;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    /* Container dos eventos */
+    .container {
+      padding: 20px;
+      position: relative;
+      width: 50%;
+    }
+
+    .container.left {
+      left: 0;
+    }
+
+    .container.right {
+      left: 50%;
+    }
+
+    /* Caixas de conteúdo */
+    .content {
+      padding: 15px;
+      background-color: #fff;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .content:hover {
+      transform: scale(1.05);
+      background-color: #f3e5f5;
+    }
+
+    /* Bolinhas da linha do tempo */
+    .container::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #6a1b9a;
+      border: 3px solid #fff;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .container.right::before {
+      left: -10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Linha do Tempo – J.K. Rowling</h2>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h3>1965</h3>
+      <p>Joanne Rowling nasce em Yate, Inglaterra.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h3>1990</h3>
+      <p>Durante uma viagem de trem, surge a ideia de Harry Potter.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h3>1997</h3>
+      <p>Publicação de *Harry Potter e a Pedra Filosofal* após várias rejeições.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h3>2001</h3>
+      <p>Estreia do primeiro filme da saga, iniciando um fenômeno global.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h3>2012</h3>
+      <p>Rowling funda a organização Lumos, dedicada a ajudar crianças em instituições.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

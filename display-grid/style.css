@@ -1,0 +1,72 @@
+ .grid{
+    display: grid;
+ }
+ 
+ body {
+    grid-template-areas:
+    "logo header header"
+    "main main aside"
+    "footer footer aside"
+    ;
+ }
+
+ .logo {
+    grid-area: logo;
+    border-radius: 30px;
+ }
+
+ .header {
+    grid-area: header;
+ }
+
+ .main {
+    grid-area: main;
+ }
+
+ .aside {
+    grid-area: aside;
+ }
+
+ .footer {
+    grid-area: footer;
+ }
+
+ .area {
+    padding: 20px;
+    margin: 20px;
+ }
+
+ .paragrafo {
+    font-size: larger;
+ }
+
+ .listas {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+ }
+
+ li {
+    margin: 20px;
+ }
+
+ .container {
+  display: flex;              /* ativa o flexbox */
+  flex-direction: row;        /* organiza os filhos em linha */
+  justify-content: space-around; /* distribui os itens com espaço */
+  align-items: flex-start;    /* alinha pelo topo */
+  flex-wrap: wrap;            /* permite quebrar linha se não couber */
+  gap: 20px;                  /* espaço entre os blocos */
+}
+
+.content {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 150px;            /* flex-grow, flex-shrink, flex-basis */
+  max-width: 200px;           /* largura máxima de cada bloco */
+}
+
+
+
