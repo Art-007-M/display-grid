@@ -1,34 +1,51 @@
  .grid{
     display: grid;
+   background: linear-gradient(45deg, #00008B, #1E3A8A, #4682B4);
+
  }
  
  body {
     grid-template-areas:
     "logo header header"
     "main main aside"
-    "footer footer aside"
+    "footer footer footer"
     ;
  }
 
  .logo {
     grid-area: logo;
     border-radius: 30px;
+    border: solid 3px cyan;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #000000, #00008B);
  }
 
  .header {
     grid-area: header;
+    border: solid 3px cyan;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #000000, #00008B);
  }
 
  .main {
     grid-area: main;
+    border: solid 3px cyan;
+    border-radius: 10px;
+    background: linear-gradient(to right, #000000, #00008B);
  }
 
  .aside {
     grid-area: aside;
+    border: solid 3px cyan;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #000000, #00008B);
  }
 
  .footer {
     grid-area: footer;
+    border: solid 3px cyan;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #000000, #00008B);
  }
 
  .area {
@@ -60,7 +77,7 @@
 }
 
 .content {
-  background: #f3f3f3;
+  background: linear-gradient(to right, #000000, #808080);
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -68,5 +85,8 @@
   max-width: 200px;           /* largura máxima de cada bloco */
 }
 
+ * {
+   color: beige;
+}
 
 
